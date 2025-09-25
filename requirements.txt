@@ -1,0 +1,8 @@
+numpy
+joblib
+matplotlib.pylot
+seaborn
+pandas
+streamlit
+xgboost
+catboost
