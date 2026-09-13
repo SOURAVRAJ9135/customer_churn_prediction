@@ -7,8 +7,18 @@ import numpy as np
 import joblib
 
 
+
 # Load your trained model
-model = joblib.load("xgb_churn_model.pkl")
+model = joblib.load("xgb_model_v1_best.pkl")
+st.markdown(
+    """
+    <div style="border: 3px solid #4CAF50; padding: 20px; border-radius: 10px">
+        <h2>Customer Churn Prediction</h2>
+        <p>Enter customer details below:</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("📊 Customer Churn Prediction App")
 st.markdown("Enter customer details to predict churn risk:")
